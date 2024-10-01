@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito Sena Eats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapper"> <!-- Hijos del wrapper son el aside y el main -->
+        <!-- Aside Barra de la izquierda -->
+        <aside>
+            <header>
+                <h1 class="logo">Logo principal de la página</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a class="boton-menu boton-volver" href="./index.html"><i
+                                class="bi bi-arrow-return-left"></i>Seguir sugiriendo</a></li>
+                    <li><a class="boton-menu boton-sugerencia active" href="./sugerencia.html"><i
+                                class="bi bi-bag-fill"></i>Sugerir</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024</p>
+            </footer>
+        </aside>
+        <!-- Main donde irían todos los productos -->
+        <main>
+            <h2 class="titulo-principal">Sugerir</h2>
+            <div class="contenedor-sugerencia">
+                <p id="sugerencia-vacio" class="sugerencia-vacio disabled">No hay sugerencias <i
+                        class="bi bi-emoji-frown"></i></p>
+                <div id="sugerencia-productos" class="sugerencia-productos disabled">
+                    <!-- Esto se completa con JavaScript -->
+                </div>
+                <br>
+                <div id="sugerencia-acciones" class="sugerencia-acciones disabled">
+                    <div class="sugerencia-acciones-izquierda">
+                        <button id="sugerencia-acciones-vaciar" class="sugerencia-acciones-vaciar">Vaciar sugerencias</button>
+                    </div>
+                    <div class="sugerencia-acciones-derecha">
+                        <div class="sugerencia-acciones-total">
+                            <p>Total</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="sugerencia-acciones-sugerir" class="sugerencia-acciones-sugerir">Sugerir ahora</button>
+                    </div>
+                </div>
+                <p id="sugerencia-sugerida" class="sugerencia-sugerida disabled">Muchas gracias por tu elección <i
+                        class="bi bi-emoji-laughing"></i></p>
+        </main>
+    </div>
+
+    <script src="./js/sugerencia.js"></script>
+</body>
+
+</html>
